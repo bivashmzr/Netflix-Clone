@@ -1,0 +1,42 @@
+
+.player {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.player iframe {
+  width: 90%;
+  height: 90%;
+  border: none;
+  object-fit: cover;
+}
+
+.back-icon {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  z-index: 10;
+  
+  transition: transform 0.2s ease;
+}
+
+.back-icon:hover {
+  transform: scale(1.1);
+
+  
+}
+
+.no-video {
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+}
