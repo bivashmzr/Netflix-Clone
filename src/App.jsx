@@ -6,6 +6,7 @@ import { Routes, Route, useNavigate, useLocation } from "react-router-dom";
 import { onAuthStateChanged } from "firebase/auth";
 import { auth } from "./firebase";
 import { ToastContainer } from "react-toastify";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 const App = () => {
   const navigate = useNavigate();
@@ -38,6 +39,7 @@ const App = () => {
         <Route path="/Login" element={<Login />} />
         <Route path="/player/:id" element={<Player />} />
       </Routes>
+      <SpeedInsights />
     </div>
   );
 };
